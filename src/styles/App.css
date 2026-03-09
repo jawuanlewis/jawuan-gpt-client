@@ -7,7 +7,7 @@
 
 @font-face {
   font-family: 'Noto Sans';
-  src: url('@/assets/fonts/NotoSans/NotoSans.ttf');
+  src: url('@src/assets/fonts/NotoSans/NotoSans.ttf');
 }
 
 :root {
