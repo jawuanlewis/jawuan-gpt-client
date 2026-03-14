@@ -5,6 +5,8 @@ import SideBar from '@src/components/SideBar';
 import ChatArea from '@src/components/ChatArea';
 import '@src/styles/App.css';
 
+import { Analytics } from '@vercel/analytics/next';
+
 const App = () => {
   const [chats, setChats] = useState<Chat[]>([]);
   const [activeChat, setActiveChat] = useState<CurrChat>(() => {
@@ -61,27 +63,30 @@ const App = () => {
   };
 
   return (
-    <div className={`app${isMobile && isSidebarOpen ? ' sidebar-open' : ''}`}>
-      {(!isMobile || isSidebarOpen) && (
-        <div className={`sidebar${isSidebarOpen ? '' : ' hidden'}`}>
-          <SideBar
-            chats={chats}
-            setIsSidebarOpen={setIsSidebarOpen}
+    <>
+      <div className={`app${isMobile && isSidebarOpen ? ' sidebar-open' : ''}`}>
+        {(!isMobile || isSidebarOpen) && (
+          <div className={`sidebar${isSidebarOpen ? '' : ' hidden'}`}>
+            <SideBar
+              chats={chats}
+              setIsSidebarOpen={setIsSidebarOpen}
+              currentChat={activeChat}
+              setCurrentChat={setActiveChat}
+              onUpdateChatTitle={handleUpdateChatTitle}
+            />
+          </div>
+        )}
+        <div className="chat-area">
+          <ChatArea
             currentChat={activeChat}
             setCurrentChat={setActiveChat}
-            onUpdateChatTitle={handleUpdateChatTitle}
+            isSidebarOpen={isSidebarOpen}
+            setIsSidebarOpen={setIsSidebarOpen}
           />
         </div>
-      )}
-      <div className="chat-area">
-        <ChatArea
-          currentChat={activeChat}
-          setCurrentChat={setActiveChat}
-          isSidebarOpen={isSidebarOpen}
-          setIsSidebarOpen={setIsSidebarOpen}
-        />
       </div>
-    </div>
+      <Analytics />
+    </>
   );
 };
 
