@@ -5,7 +5,7 @@ import SideBar from '@src/components/SideBar';
 import ChatArea from '@src/components/ChatArea';
 import '@src/styles/App.css';
 
-import { Analytics } from '@vercel/analytics/next';
+import { Analytics } from '@vercel/analytics/react';
 
 const App = () => {
   const [chats, setChats] = useState<Chat[]>([]);
