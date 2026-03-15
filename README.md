@@ -1,4 +1,4 @@
-# Jawuan's GPT Client
+# Jawuan GPT Client
 
 ## 📚 Table of Contents
 
@@ -12,7 +12,7 @@
 
 ## 🧠 Project Overview
 
-Frontend client for my personal AI-powered chatbot, **_Jawuan's GPT_**. This React application provides the user interface for conversing with OpenAI's GPT models, communicating with a separate [backend API](https://github.com/jawuanlewis/jawuan-gpt-api) to manage chat state. Users can:
+Frontend client for my personal AI-powered chatbot, **_Jawuan GPT_**. This React application provides the user interface for conversing with OpenAI's GPT models, communicating with a separate [backend API](https://github.com/jawuanlewis/jawuan-gpt-api) to manage chat state. Users can:
 
 1. Start new conversations and receive AI-generated responses
 2. Manage multiple chat sessions from the sidebar
@@ -20,7 +20,7 @@ Frontend client for my personal AI-powered chatbot, **_Jawuan's GPT_**. This Rea
 
 ## 🚀 Live Demo
 
-- Application live here: [Jawuan's GPT](https://gpt.jawuanlewis.dev)
+- Application live here: [Jawuan GPT](https://gpt.jawuanlewis.dev)
 - Initial designs available here: [Figma Designs](https://www.figma.com/design/7L2M9WD2Lmsjke14rtwscX/Chatbot?node-id=0-1&t=gsJwMsjE6Q6RSxH0-1)
 
 ## 💻 Tech Stack
@@ -57,7 +57,7 @@ jawuan-gpt-client/
 
 - **Node.js** (>=20.0.0)
 - **pnpm** — install via `npm install -g pnpm`
-- A running instance of the [Jawuan's GPT API](https://github.com/jawuanlewis/jawuan-gpt-api) for full functionality
+- A running instance of the [Jawuan GPT API](https://github.com/jawuanlewis/jawuan-gpt-api) for full functionality
 
 > This is a frontend-only project. Setup instructions are provided below for reference.
 
@@ -78,7 +78,7 @@ pnpm install
 
 Create a `.env` file in the root directory that contains the following variable:
 
-- **VITE_API_URL:** URL of the Jawuan's GPT API (e.g., `http://localhost:3000`)
+- **VITE_API_URL:** URL of the Jawuan GPT API (e.g., `http://localhost:3000`)
 
 ### Run the development server
 
