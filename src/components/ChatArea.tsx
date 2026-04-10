@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
 import type { Dispatch, SetStateAction } from 'react';
-import { chatService } from '@src/services/chatService';
+import { chatService } from '@src/services/chat-service';
 import type { CurrChat } from '@src/types/chat';
 import MenuButton from './MenuButton';
 import Conversation from './Conversation';
-import '@src/styles/ChatArea.css';
+import '@src/styles/chat-area.css';
 import { v4 as uuidv4 } from 'uuid';
 
 interface ChatAreaProps {

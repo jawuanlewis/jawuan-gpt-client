@@ -1,6 +1,6 @@
 import { useLayoutEffect, useRef } from 'react';
 import type { Message } from '@src/types/chat';
-import '@src/styles/Conversation.css';
+import '@src/styles/conversation.css';
 
 interface ConversationProps {
   chat: Message[];

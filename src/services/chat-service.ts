@@ -1,5 +1,5 @@
 import type { CurrChat } from '@src/types/chat';
-import api from './apiClient';
+import api from './api-client';
 
 export const chatService = {
   getChatHistory: async () => {

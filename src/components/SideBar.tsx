@@ -2,7 +2,7 @@ import type { Dispatch, SetStateAction } from 'react';
 import type { Chat, CurrChat } from '@src/types/chat';
 import MenuButton from './MenuButton';
 import ChatItem from './ChatItem';
-import '@src/styles/SideBar.css';
+import '@src/styles/sidebar.css';
 
 interface SideBarProps {
   chats: Chat[];

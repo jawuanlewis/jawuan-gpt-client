@@ -1,5 +1,5 @@
 import axios, { AxiosError } from 'axios';
-import { getClientId } from '@src/utils/clientId';
+import { getClientId } from '@src/utils/client-id';
 
 const api = axios.create({
   baseURL: import.meta.env.VITE_API_URL,

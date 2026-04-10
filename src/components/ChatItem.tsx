@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import type { Chat } from '@src/types/chat';
-import '@src/styles/ChatItem.css';
+import '@src/styles/chat-item.css';
 
 interface ChatItemProps {
   chat: Chat;

@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
-import { chatService } from '@src/services/chatService';
+import { chatService } from '@src/services/chat-service';
 import type { Chat, CurrChat } from '@src/types/chat';
 import SideBar from '@src/components/SideBar';
 import ChatArea from '@src/components/ChatArea';
-import '@src/styles/App.css';
+import '@src/styles/app.css';
 
 import { Analytics } from '@vercel/analytics/react';
 
