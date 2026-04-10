@@ -1,6 +1,6 @@
 # Project Context - `jawuan-gpt-client`
 
-React frontend for Jawuan GPT, a personal AI-powered chatbot. Communicates with [jawuan-gpt-api](https://github.com/jawuanlewis/jawuan-gpt-api) to manage chat sessions and stream AI responses.
+React frontend for Jawuan GPT, a personal AI-powered chatbot. Communicates with [jawuan-gpt-api](https://github.com/jawuanlewis/jawuan-gpt-api) to manage chat sessions and relay AI responses.
 
 ## Stack
 
@@ -43,7 +43,7 @@ main.tsx → App.tsx (state) → SideBar.tsx
 | `src/components/ChatItem.tsx`     | Individual chat entry with inline title editing                                               |
 | `src/services/api-client.ts`      | Axios instance; injects `X-Client-ID` header via request interceptor                          |
 | `src/services/chat-service.ts`    | API facade — `getChatHistory()`, `handlePrompt()`, `updateChatTitle()`                        |
-| `src/utils/client-id.ts`          | Generates a random 30-char session ID stored in `sessionStorage`                              |
+| `src/utils/client-id.ts`          | Generates a random ~26-char session ID stored in `sessionStorage`                             |
 
 ## API Communication
 
